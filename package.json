@@ -4,6 +4,7 @@
   "description": "Osu Beatmapset Downloader",
   "main": "./dist/main/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"HMMMMM\""
   },
   "repository": {

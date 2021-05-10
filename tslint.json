@@ -1,0 +1,14 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [true, "double"],
+    "interface-name": [true, "never-prefix"],
+    "object-literal-sort-keys": [false],
+    "max-line-length": [true, 120]
+  },
+  "rulesDirectory": []
+}

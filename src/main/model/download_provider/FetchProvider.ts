@@ -1,4 +1,4 @@
-import DownloadProvider from "../../abstract/DownloadProvider";
+import DownloadProvider from "../../struct/DownloadProvider";
 import fetch, {Response, RequestInfo, RequestInit} from "node-fetch";
 
 const FILENAME_EXTRACTOR = /filename\*?=["]?(?:UTF-\d["]*)?([^;\r\n"]*)["]?;?/i;

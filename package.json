@@ -1,6 +1,6 @@
 {
   "name": "osu-beatmapset-downloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Osu Beatmapset Downloader",
   "main": "./dist/main/index.js",
   "scripts": {

@@ -1,5 +1,5 @@
-import OsuBeatmapsetDownloader from "../../abstract/OsuBeatmapsetDownloader";
-import DownloadProvider from "../../abstract/DownloadProvider";
+import OsuBeatmapsetDownloader from "../../struct/OsuBeatmapsetDownloader";
+import DownloadProvider from "../../struct/DownloadProvider";
 import {download} from "../download_provider/FetchProvider";
 import {Headers} from "node-fetch";
 

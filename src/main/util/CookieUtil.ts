@@ -9,14 +9,15 @@ export interface Cookies {
   [name: string]: Cookie[]
 }
 
-export function parseCookies(raw: string[], decode = true): Cookies {
-  let cookies = raw.map(r => parseCookieString(r, decode));
+export function parseCookies(raws: string[], decode = true): Cookies {
+  let cookies = raws.map(raw => parseCookieString(raw, decode));
   let result = {};
-  for (const {name, ...value} of cookies) {
+  for (const cookie of cookies) {
+    const {name} = cookie;
     if (result[name] === undefined) {
-      result[name] = [value];
+      result[name] = [cookie];
     } else {
-      result[name].push(value);
+      result[name].push(cookie);
     }
   }
   return result;
@@ -26,7 +27,9 @@ export function parseCookieString(rawCookie: string, decode: boolean = true): Co
   let parts = rawCookie.split(";").filter(value => value !== "");
   let [name, ...trials] = parts.shift().split("=");
   let value = trials.join("=");
-  value = decode ? decodeURIComponent(value) : value;
+  if (decode) {
+    value = decodeURIComponent(value);
+  }
   let cookie: Cookie = {name, value};
   for (const part of parts) {
     let sides = part.split("=");
@@ -41,6 +44,7 @@ export function parseCookieString(rawCookie: string, decode: boolean = true): Co
         break;
       default:
         cookie[key] = value === "" ? true : value;
+        break;
     }
   }
   return cookie;
@@ -48,11 +52,13 @@ export function parseCookieString(rawCookie: string, decode: boolean = true): Co
 
 export function wrapCookies(parsedCookies: Cookies): string {
   return Object.entries(parsedCookies)
-    .map(([name, cookie]) => name + "=" + cookie
-      .filter(c =>
-        c.maxAge && (c.maxAge > 0) ||
-        c.expires && (c.expires.getTime() - Date.now() > 0)
+    .map(([name, cookies]) => name + "=" + cookies
+      .filter(cookie =>
+        cookie.expires && cookie.expires.getTime() > Date.now() ||
+        cookie.maxAge && cookie.maxAge > 0
       )
-      .map(d => d.value).join(";"))
+      .map(cookie => cookie.value)
+      .join(";")
+    )
     .join(";");
 }

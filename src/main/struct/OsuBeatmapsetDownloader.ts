@@ -1,6 +1,11 @@
 import DownloadClient from "./DownloadClient";
 import Downloader from "./Downloader";
 
+export interface BeatmapsetDownloadOptions {
+  beatmapsetId: string | number,
+  noVideo?: boolean
+}
+
 export default abstract class OsuBeatmapsetDownloader {
   readonly client: DownloadClient;
 
@@ -8,5 +13,5 @@ export default abstract class OsuBeatmapsetDownloader {
     this.client = client;
   }
 
-  abstract download(beatmapsetId: number, noVideo: boolean): Downloader;
+  abstract download(options: BeatmapsetDownloadOptions): Downloader;
 }

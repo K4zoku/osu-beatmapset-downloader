@@ -1,21 +1,31 @@
-import OsuBeatmapsetDownloader from "../struct/OsuBeatmapsetDownloader";
+import OsuBeatmapsetDownloader, {BeatmapsetDownloadOptions} from "../struct/OsuBeatmapsetDownloader";
 import DownloadClient from "../struct/DownloadClient";
 import Downloader from "../struct/Downloader";
 
 export default class OsuOfficialDownloader extends OsuBeatmapsetDownloader {
-  readonly #cookie: string;
+  #osu_session: string;
 
-  constructor(client: DownloadClient, cookie: string) {
+  constructor(client: DownloadClient, osu_session: string) {
     super(client);
-    this.#cookie = cookie;
+    this.#osu_session = osu_session;
   }
 
-  download(beatmapsetId: number, noVideo: boolean): Downloader {
-    const url = new URL(`https://osu.ppy.sh/beatmapsets/${beatmapsetId}/download`);
-    url.searchParams.append("noVideo", noVideo ? "1" : "0");
+  getSession(): string {
+    return this.#osu_session;
+  }
+
+  setSession(osu_session: string) {
+    this.#osu_session = osu_session;
+  }
+
+  download(options: BeatmapsetDownloadOptions): Downloader {
+    const url = new URL(`https://osu.ppy.sh/beatmapsets/${options.beatmapsetId}/download`);
+    if (options.noVideo !== undefined) {
+      url.searchParams.append("noVideo", options.noVideo ? "1" : "0");
+    }
     const headers = {
-      "Cookie": this.#cookie,
-      "Referer": url.href
+      cookie: `osu_session=${this.#osu_session}`,
+      referer: url.href
     };
     return this.client.download(url, {headers});
   }

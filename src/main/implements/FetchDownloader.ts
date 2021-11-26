@@ -32,4 +32,9 @@ export default class FetchDownloader extends Downloader {
   async stream(): Promise<NodeJS.ReadableStream> {
     return (await this.#response).body;
   }
+
+  async mime(): Promise<string> {
+    const response = await this.#response;
+    return response.headers.get("Content-Type");
+  }
 }

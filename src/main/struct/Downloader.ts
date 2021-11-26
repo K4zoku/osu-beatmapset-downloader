@@ -6,4 +6,6 @@ export default abstract class Downloader {
   abstract size(): Promise<number>;
 
   abstract name(): Promise<string>;
+
+  abstract mime(): Promise<string>;
 }

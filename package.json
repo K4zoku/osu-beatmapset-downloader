@@ -5,7 +5,7 @@
   "main": "./dist/main/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"HMMMMM\""
+    "test": "echo \"There is no test\""
   },
   "repository": {
     "type": "git",

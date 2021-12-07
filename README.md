@@ -1,14 +1,18 @@
-# osu-beatmapset-downloader
+<h1 align="center"><code>osu-beatmapset-downloader</code></h1>
+<p align="center"> #TODO </p>
 
-## Installation
+## 💡 About
+_#TODO_
 
-```shell
+## 📥 Installation
+
+```sh
 $ npm install osu-beatmapset-downloader
 ```
 
-## Usage
+## ⌨️ Usage
 
-### Basic
+### 🔰 Basic
 
 ```js
 // import statement
@@ -34,7 +38,7 @@ async function main(args) {
 main(process.argv.slice(2)).catch(console.error);
 ```
 
-### Advanced
+### ⏫ Advanced
 
 ```js
 // import statement
@@ -69,3 +73,9 @@ async function main(args) {
 
 main(process.argv.slice(2)).catch(console.error);
 ```
+
+<br><br><br><br>
+
+---
+
+> <h1 align="center">Made with ❤️ by <a href="https://github.com/K4zoku"><i>K4zoku</i></a></h1>

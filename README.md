@@ -1,12 +1,10 @@
 <h1 align="center"><code>osu-beatmapset-downloader</code></h1>
-<p align="center"> 
-
-![npms.io (final)](https://img.shields.io/npms-io/quality-score/osu-beatmapset-downloader?style=for-the-badge) 
-![npms.io (final)](https://img.shields.io/npms-io/maintenance-score/osu-beatmapset-downloader?style=for-the-badge) 
-![NPM](https://img.shields.io/npm/l/osu-beatmapset-downloader?style=for-the-badge) 
-![npm](https://img.shields.io/npm/v/osu-beatmapset-downloader?style=for-the-badge)
-![npm](https://img.shields.io/npm/dt/osu-beatmapset-downloader?style=for-the-badge) 
-
+<p align="center">
+  <img src="https://img.shields.io/npms-io/quality-score/osu-beatmapset-downloader?style=for-the-badge">
+  <img src="https://img.shields.io/npms-io/maintenance-score/osu-beatmapset-downloader?style=for-the-badge">
+  <img src="https://img.shields.io/npm/l/osu-beatmapset-downloader?style=for-the-badge">
+  <img src="https://img.shields.io/npm/v/osu-beatmapset-downloader?style=for-the-badge">
+  <img src="https://img.shields.io/npm/dt/osu-beatmapset-downloader?style=for-the-badge">
 </p>
 
 ## 💡 About

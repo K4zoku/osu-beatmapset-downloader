@@ -6,7 +6,6 @@
 ![NPM](https://img.shields.io/npm/l/osu-beatmapset-downloader?style=for-the-badge) 
 ![npm](https://img.shields.io/npm/v/osu-beatmapset-downloader?style=for-the-badge)
 ![npm](https://img.shields.io/npm/dt/osu-beatmapset-downloader?style=for-the-badge) 
-![npm bundle size](https://img.shields.io/bundlephobia/min/osu-beatmapset-downloader?style=for-the-badge) 
 
 </p>
 

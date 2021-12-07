@@ -74,6 +74,10 @@ async function main(args) {
 main(process.argv.slice(2)).catch(console.error);
 ```
 
+## 💌 Credits
+Special thanks to:
+- [**NNB**](https://github.com/NNBnh) for polish this project's `README.md`.
+
 <br><br><br><br>
 
 ---

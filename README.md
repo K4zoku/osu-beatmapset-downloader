@@ -1,8 +1,10 @@
 <h1 align="center"><code>osu-beatmapset-downloader</code></h1>
-<p align="center"> #TODO </p>
+<p align="center"> ![npms.io (final)](https://img.shields.io/npms-io/quality-score/osu-beatmapset-downloader?style=for-the-badge) ![npms.io (final)](https://img.shields.io/npms-io/maintenance-score/osu-beatmapset-downloader?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/osu-beatmapset-downloader?style=for-the-badge) 
+![npm](https://img.shields.io/npm/v/osu-beatmapset-downloader?style=for-the-badge)
+![npm](https://img.shields.io/npm/dt/osu-beatmapset-downloader?style=for-the-badge) ![npm bundle size](https://img.shields.io/bundlephobia/min/osu-beatmapset-downloader?style=for-the-badge) </p>
 
 ## 💡 About
-_#TODO_
+This repo was originally created to download osu beatmaps when I had to switch machines. And another reason is to reduce lag while playing osu on my potato machine (because it doesn't need to open the browser)
 
 ## 📥 Installation
 

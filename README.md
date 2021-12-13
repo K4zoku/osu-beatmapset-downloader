@@ -3,8 +3,8 @@
   <img src="https://img.shields.io/npms-io/quality-score/osu-beatmapset-downloader?style=for-the-badge">
   <img src="https://img.shields.io/npms-io/maintenance-score/osu-beatmapset-downloader?style=for-the-badge">
   <img src="https://img.shields.io/npm/l/osu-beatmapset-downloader?style=for-the-badge">
-  <img src="https://img.shields.io/npm/v/osu-beatmapset-downloader?style=for-the-badge">
-  <img src="https://img.shields.io/npm/dt/osu-beatmapset-downloader?style=for-the-badge">
+  <a href="https://www.npmjs.com/package/osu-beatmapset-downloader"><img src="https://img.shields.io/npm/v/osu-beatmapset-downloader?style=for-the-badge"></a>
+  <a href="https://www.npmjs.com/package/osu-beatmapset-downloader"><img src="https://img.shields.io/npm/dt/osu-beatmapset-downloader?style=for-the-badge"></a>
 </p>
 
 ## 💡 About
